@@ -30,6 +30,9 @@
                                 <rect key="frame" x="50" y="717" width="314" height="45"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonDidTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iO8-D0-VLD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wT-BC-RB9">
                                 <rect key="frame" x="50" y="275" width="45" height="21"/>
@@ -64,6 +67,10 @@
                             <constraint firstItem="man-vx-cmZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qKp-ex-ame" secondAttribute="bottom" constant="50" id="vka-oV-gFc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="Agy-vd-Nwi" id="mFT-YK-Ng6"/>
+                        <outlet property="passwordTextField" destination="qKp-ex-ame" id="hgm-Re-FO4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
