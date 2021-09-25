@@ -99,8 +99,8 @@
 		75D2901E26FEEA70000718DF /* iOSXCUITestPractice */ = {
 			isa = PBXGroup;
 			children = (
-				75D2905026FEEAC5000718DF /* Controllers */,
-				75D2904F26FEEAB9000718DF /* Views */,
+				75D2905026FEEAC5000718DF /* Controller */,
+				75D2904F26FEEAB9000718DF /* View */,
 				75D2901F26FEEA70000718DF /* AppDelegate.swift */,
 				75D2902126FEEA70000718DF /* SceneDelegate.swift */,
 				75D2902826FEEA76000718DF /* Assets.xcassets */,
@@ -128,20 +128,20 @@
 			path = iOSXCUITestPracticeUITests;
 			sourceTree = "<group>";
 		};
-		75D2904F26FEEAB9000718DF /* Views */ = {
+		75D2904F26FEEAB9000718DF /* View */ = {
 			isa = PBXGroup;
 			children = (
 				75D2905126FEEAEA000718DF /* Login.storyboard */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
-		75D2905026FEEAC5000718DF /* Controllers */ = {
+		75D2905026FEEAC5000718DF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				75D2905326FEEAF8000718DF /* LoginViewController.swift */,
 			);
-			name = Controllers;
+			name = Controller;
 			path = "New Group1";
 			sourceTree = "<group>";
 		};
