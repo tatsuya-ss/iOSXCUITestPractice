@@ -9,6 +9,8 @@ import XCTest
 
 final class FirstStep: XCTestCase {
     
+    let app = XCUIApplication()
+    
     override func setUp() {
         continueAfterFailure = false
         XCUIApplication().launch() /// 起動
@@ -19,7 +21,8 @@ final class FirstStep: XCTestCase {
     }
     
     func testExample() {
-        
+        print(app.debugDescription)
+        app.textFields.firstMatch.tap()
     }
     
 }
