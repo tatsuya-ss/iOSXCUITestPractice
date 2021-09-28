@@ -36,6 +36,16 @@ final class FirstStep: XCTestCase {
             password.tap()
             password.typeText("MyP@ssworD")
         }
+//        XCTContext.runActivity(named: "ユーザ名を入力する") { _ in
+//            if app.textFields["non_exists_id"].exists == false {
+//                let screenshot = app.screenshot()
+//                let attachment = XCTAttachment(screenshot: screenshot)
+//                add(attachment)
+//                XCTFail("TextFieldは存在しませんでした")
+//            }
+//            app.textFields["login_name_textfield"].tap()
+//            app.textFields["login_name_textfield"].typeText("gyoza")
+//        }
         XCTContext.runActivity(named: "ログインボタンをタップする") { _ in
             loginView.tap()
             let button = app.buttons["login_login_button"]
