@@ -13,7 +13,7 @@ final class FirstStep: XCTestCase {
     
     override func setUp() {
         continueAfterFailure = false
-        XCUIApplication().launch() /// 起動
+        app.launch() /// 起動
     }
     
     override func tearDown() {
@@ -21,8 +21,40 @@ final class FirstStep: XCTestCase {
     }
     
     func testExample() {
-        print(app.debugDescription)
-        app.textFields.firstMatch.tap()
+//        print(app.debugDescription)
+//        app.textFields.firstMatch.tap()
+//
+//        /// XCUIElementTypeQueryProvider
+//        let query = app.descendants(matching: .textField)
+//        let element = query.element
+//
+        /// Accessibility Identifier
+        let loginView = app.otherElements["login_root_view"]
+        
+        let userName = app.textFields["login_name_textfield"]
+        let password = app.secureTextFields["login_password_textfield"]
+        let button = app.buttons["login_login_button"]
+        
+        /// UI要素が画面上に存在するかどうか
+        XCTAssert(loginView.exists)
+        XCTAssert(userName.exists)
+        XCTAssert(password.exists)
+        XCTAssert(button.exists)
+        
+        /// ユーザ名とパスワードの入力
+        userName.tap()
+        userName.typeText("iwomm")
+        password.tap()
+        password.typeText("MyP@ssworD")
+        
+        /// ログイン処理実行
+        loginView.tap()
+        button.tap()
+        
+        /// トップページへ遷移
+        let top = app.otherElements["top_root_view"]
+        XCTAssert(top.exists)
+        
     }
     
 }
