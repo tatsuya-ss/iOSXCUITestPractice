@@ -52,8 +52,10 @@ final class FirstStep: XCTestCase {
         button.tap()
         
         /// トップページへ遷移
+//        let top = app.otherElements["top_root_view"]
+//        XCTAssert(top.exists)
         let top = app.otherElements["top_root_view"]
-        XCTAssert(top.exists)
+        XCTAssert(top.waitForExistence(timeout: 2)) // 失敗する時もあるなら、待ち処理を作成して安全にテストする
         
     }
     
