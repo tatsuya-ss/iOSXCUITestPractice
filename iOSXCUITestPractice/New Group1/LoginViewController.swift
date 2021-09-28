@@ -14,11 +14,17 @@ final class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>,
+                               with event: UIEvent?) {
+        passwordTextField.resignFirstResponder()
     }
 
     @IBAction private func loginButtonDidTapped(_ sender: Any) {
-        
+        let topVC = UIStoryboard(name: "Top", bundle: nil).instantiateInitialViewController() as! TopViewController
+        present(topVC, animated: true, completion: nil)
     }
 
 }
