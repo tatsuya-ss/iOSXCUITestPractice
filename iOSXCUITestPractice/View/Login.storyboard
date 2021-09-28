@@ -18,17 +18,20 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Agy-vd-Nwi">
                                 <rect key="frame" x="50" y="304" width="314" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="login_name_textfield"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qKp-ex-ame">
                                 <rect key="frame" x="50" y="387" width="314" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="login_password_textfield"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="man-vx-cmZ">
                                 <rect key="frame" x="50" y="717" width="314" height="45"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="login_login_button"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginButtonDidTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iO8-D0-VLD"/>
@@ -49,6 +52,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="login_root_view"/>
                         <constraints>
                             <constraint firstItem="qKp-ex-ame" firstAttribute="leading" secondItem="Agy-vd-Nwi" secondAttribute="leading" id="3aZ-M9-Drk"/>
                             <constraint firstItem="qKp-ex-ame" firstAttribute="top" secondItem="L1u-5l-WZt" secondAttribute="bottom" constant="8" symbolic="YES" id="3ex-q2-G8g"/>

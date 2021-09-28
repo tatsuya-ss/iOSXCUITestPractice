@@ -23,6 +23,9 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="top_root_view">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Igl-QJ-nLt" secondAttribute="bottom" id="0eZ-6h-jSG"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Igl-QJ-nLt" secondAttribute="trailing" id="Fjw-JF-XsQ"/>
